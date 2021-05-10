@@ -1,4 +1,4 @@
-package com.reb4ck.regionwrapper.implementations;
+package me.reb4ck.regionwrapper.implementations;
 
 import org.bukkit.Location;
 import java.util.List;

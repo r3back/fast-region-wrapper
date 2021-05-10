@@ -1,4 +1,4 @@
-package com.reb4ck.regionwrapper.implementations;
+package me.reb4ck.regionwrapper.implementations;
 
 import com.sk89q.worldguard.bukkit.WGBukkit;
 import com.sk89q.worldguard.protection.ApplicableRegionSet;
