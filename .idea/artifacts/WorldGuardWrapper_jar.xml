@@ -2,11 +2,11 @@
   <artifact type="jar" name="WorldGuardWrapper:jar">
     <output-path>D:/Downloads/SERVERS/1.16.5</output-path>
     <root id="archive" name="WorldGuardWrapper.jar">
-      <element id="module-output" name="WorldGuard6" />
+      <element id="module-output" name="worldguard-6" />
       <element id="module-output" name="WorldGuardWrapper" />
-      <element id="module-output" name="WorldGuardWrap" />
-      <element id="module-output" name="WorldGuardWrapPlugin" />
-      <element id="module-output" name="WorldGuard7" />
+      <element id="module-output" name="commons" />
+      <element id="module-output" name="region-wrapper-plugin" />
+      <element id="module-output" name="worldguard-7" />
     </root>
   </artifact>
 </component>

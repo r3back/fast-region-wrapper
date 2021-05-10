@@ -8,9 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="WorldGuardWrapPlugin" />
         <module name="WorldGuard7" />
+        <module name="residence" />
         <module name="WorldGuard6" />
-        <module name="WorldGuardWrap" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="commons" target="1.8" />
+      <module name="region-wrapper-plugin" target="1.8" />
+      <module name="worldguard-6" target="1.8" />
+      <module name="worldguard-7" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

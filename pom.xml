@@ -9,10 +9,10 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>WorldGuard6</module>
-        <module>WorldGuard7</module>
-        <module>WorldGuardWrap</module>
-        <module>WorldGuardWrapPlugin</module>
+        <module>worldguard-6</module>
+        <module>worldguard-7</module>
+        <module>region-wrapper-plugin</module>
+        <module>residence</module>
     </modules>
 
     <properties>
