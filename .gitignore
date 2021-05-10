@@ -1,0 +1,6 @@
+# Project exclude paths
+/target/
+/WorldGuard6/target/
+/WorldGuard7/target/
+/WorldGuardWrap/target/
+/WorldGuardWrapPlugin/target/

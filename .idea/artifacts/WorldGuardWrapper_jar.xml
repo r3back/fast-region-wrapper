@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="WorldGuardWrapper:jar">
+    <output-path>D:/Downloads/SERVERS/1.16.5</output-path>
+    <root id="archive" name="WorldGuardWrapper.jar">
+      <element id="module-output" name="WorldGuard6" />
+      <element id="module-output" name="WorldGuardWrapper" />
+      <element id="module-output" name="WorldGuardWrap" />
+      <element id="module-output" name="WorldGuardWrapPlugin" />
+      <element id="module-output" name="WorldGuard7" />
+    </root>
+  </artifact>
+</component>
