@@ -1,5 +1,8 @@
-package me.reb4ck.regionwrapper.implementations;
+package me.reb4ck.regionwrapper;
 
+import me.reb4ck.regionwrapper.implementations.RegionPluginImpl;
+import me.reb4ck.regionwrapper.implementations.WorldGuard6;
+import me.reb4ck.regionwrapper.implementations.WorldGuard7;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class RegionWrapper extends JavaPlugin {
