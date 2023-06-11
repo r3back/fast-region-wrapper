@@ -1,6 +1,7 @@
 # Fast Region Wrapper
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/r3back/fast-region-wrapper/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/r3back/fast-region-wrapper/tree/master)
 
-LightWeight library for developers to switch and handle easily between different region spigot mc plugins.
+Lightweight library for developers to switch and handle easily between different region spigot mc plugins.
 
 # API Usage
 
