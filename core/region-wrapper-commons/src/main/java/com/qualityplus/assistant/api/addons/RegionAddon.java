@@ -35,7 +35,7 @@ public interface RegionAddon extends DependencyPlugin {
      * @return true if location is inside region
      */
     public default boolean isInRegion(final Location location, final String region) {
-        if(region == null) {
+        if (region == null) {
             return false;
         }
 

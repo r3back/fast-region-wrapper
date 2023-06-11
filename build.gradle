@@ -29,6 +29,7 @@ subprojects {
 
     dependencies {
         implementation("org.jetbrains:annotations:22.0.0")
+        implementation("com.google.guava:guava:32.0.1-jre")
 
         compileOnly("org.projectlombok:lombok:1.18.22")
 
