@@ -1,6 +1,11 @@
-# Project exclude paths
-/target/
-/WorldGuard6/target/
-/WorldGuard7/target/
-/WorldGuardWrap/target/
-/WorldGuardWrapPlugin/target/
+
+/.idea
+/.gradle
+.gitignore
+*/build
+*/*/build
+*/*/*/build
+*/*/*/*/build
+*/libs
+*/*/libs
+*/*/*/libs
