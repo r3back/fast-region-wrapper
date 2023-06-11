@@ -8,11 +8,11 @@ import java.util.Optional;
 public interface DependencyPlugin {
     public Optional<String> getAddonName();
 
-    public default String getVersion(){
+    public default String getVersion() {
         return "1.0";
     }
 
-    public default boolean isEnabled(){
+    public default boolean isEnabled() {
         return getAddonName().isPresent();
     }
 }

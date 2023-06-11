@@ -25,6 +25,10 @@ subprojects {
 
     repositories {
         mavenCentral()
+        //Spigot API Repo
+        maven {
+            url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+        }
     }
 
     dependencies {
