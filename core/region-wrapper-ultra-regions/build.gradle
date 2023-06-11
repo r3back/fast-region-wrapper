@@ -1,0 +1,11 @@
+group = 'com.qualityplus'
+project.version = '1.0.0'
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.18.1-R0.1-SNAPSHOT'
+
+    compileOnly project(':api')
+    compileOnly project(':core:region-wrapper-commons')
+
+    compileOnly fileTree(dir: '/libs', include: ['*.jar'])
+}

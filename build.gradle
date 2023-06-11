@@ -1,0 +1,40 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+    id 'checkstyle'
+}
+
+defaultTasks 'build'
+
+group = 'com.qualityplus.core'
+version = '1.0.0'
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'maven-publish'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+
+    jar {
+        from '../LICENSE.txt'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        implementation("org.jetbrains:annotations:22.0.0")
+
+        compileOnly("org.projectlombok:lombok:1.18.22")
+
+        annotationProcessor("org.projectlombok:lombok:1.18.22")
+    }
+}
+
+
+
