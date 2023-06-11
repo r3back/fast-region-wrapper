@@ -1,12 +1,24 @@
 group = 'com.qualityplus'
 project.version = '1.0.0'
 
+def urlFile = { url, name ->
+    File file = new File("$buildDir/download/${name}.jar")
+    file.parentFile.mkdirs()
+    if (!file.exists()) {
+        new URL(url).withInputStream { downloadStream ->
+            file.withOutputStream { fileOut ->
+                fileOut << downloadStream
+            }
+        }
+    }
+    files(file.absolutePath)
+}
+
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.18.1-R0.1-SNAPSHOT'
-    //implementation 'com.github.Zrips:Residence:2.5.8'
 
     compileOnly project(':api')
     compileOnly project(':core:region-wrapper-commons')
 
-    compileOnly fileTree(dir: '/libs', include: ['*.jar'])
+    compileOnly urlFile('https://zrips.net/Residence/download.php?file=Residence5.1.1.3.jar', 'residence-latest')
 }
