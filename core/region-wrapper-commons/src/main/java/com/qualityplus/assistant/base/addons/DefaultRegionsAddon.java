@@ -1,4 +1,4 @@
-package com.qualityplus.assistant.base.addons.regions;
+package com.qualityplus.assistant.base.addons;
 
 import com.qualityplus.assistant.api.addons.RegionAddon;
 import org.bukkit.Location;
