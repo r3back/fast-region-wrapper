@@ -1,8 +1,10 @@
 rootProject.name = 'fast-region-wrapper'
 include ('core',
         'api',
+        'plugin',
         'core:region-wrapper-commons',
         'core:region-wrapper-residence',
         'core:region-wrapper-ultra-regions',
         'core:region-wrapper-wg6',
         'core:region-wrapper-wg7')
+

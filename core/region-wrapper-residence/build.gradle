@@ -1,5 +1,5 @@
-group = 'com.qualityplus'
-project.version = '1.0.0'
+group = 'com.github.r3back'
+version = rootProject.version
 
 def urlFile = { url, name ->
     File file = new File("$buildDir/download/${name}.jar")

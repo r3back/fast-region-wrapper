@@ -1,0 +1,54 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.r3back'
+version rootProject.version
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    project(':core').subprojects.forEach(project -> implementation project)
+    implementation project(':api')
+}
+
+shadowJar {
+    archiveClassifier.set('')
+
+    dependencies {
+        include(project(':api'))
+        include(project(':core:region-wrapper-commons'))
+        include(project(':core:region-wrapper-residence'))
+        include(project(':core:region-wrapper-ultra-regions'))
+        include(project(':core:region-wrapper-wg6'))
+        include(project(':core:region-wrapper-wg7'))
+    }
+}
+
+artifacts {
+    archives shadowJar
+}
+
+publishing {
+    repositories {
+        maven {
+            url "https://jitpack.io"
+            credentials {
+                username 'token'
+                password System.getenv('API_TOKEN')
+            }
+        }
+    }
+
+
+    publications {
+        register('shadow', MavenPublication) {
+            groupId project.group
+            artifactId rootProject.name
+            version project.version
+            artifact shadowJar
+        }
+    }
+}
