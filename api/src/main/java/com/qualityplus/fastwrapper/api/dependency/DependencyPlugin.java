@@ -1,4 +1,4 @@
-package com.qualityplus.fastwrapper.api;
+package com.qualityplus.fastwrapper.api.dependency;
 
 import java.util.Optional;
 
@@ -6,8 +6,16 @@ import java.util.Optional;
  * Interface for Dependency plugins
  */
 public interface DependencyPlugin {
+    /**
+     *
+     * @return
+     */
     public Optional<String> getAddonName();
 
+    /**
+     *
+     * @return
+     */
     public default String getVersion() {
         return "1.0";
     }

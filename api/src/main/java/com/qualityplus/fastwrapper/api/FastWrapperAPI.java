@@ -1,11 +1,9 @@
-package com.qualityplus.fastwrapper;
-
-import com.qualityplus.fastwrapper.api.addons.RegionAddon;
+package com.qualityplus.fastwrapper.api;
 
 /**
  * Fast Region Plugin Wrapper Interface
  */
-public interface FastWrapper {
+public interface FastWrapperAPI {
     /**
      *
      * @return {@link RegionAddon}

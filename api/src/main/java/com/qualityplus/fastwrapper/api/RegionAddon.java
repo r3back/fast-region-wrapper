@@ -1,6 +1,6 @@
-package com.qualityplus.fastwrapper.api.addons;
+package com.qualityplus.fastwrapper.api;
 
-import com.qualityplus.fastwrapper.api.DependencyPlugin;
+import com.qualityplus.fastwrapper.api.dependency.DependencyPlugin;
 import org.bukkit.Location;
 
 import java.util.List;

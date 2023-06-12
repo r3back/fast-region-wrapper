@@ -1,0 +1,7 @@
+name: FastRegionWrapper
+description: FastRegionWrapper Plugin
+main: com.qualityplus.fastwrapper.FastWrapperPlugin
+version: ${version}
+api-version: 1.13
+authors: [QualityPlus]
+softdepend: [WorldEdit, WorldGuard, UltraRegions, Residence]

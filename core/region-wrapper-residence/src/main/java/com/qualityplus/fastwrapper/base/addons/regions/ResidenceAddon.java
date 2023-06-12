@@ -3,7 +3,7 @@ package com.qualityplus.fastwrapper.base.addons.regions;
 import com.bekvon.bukkit.residence.Residence;
 import com.bekvon.bukkit.residence.protection.ClaimedResidence;
 import com.google.common.collect.ImmutableSet;
-import com.qualityplus.fastwrapper.api.addons.RegionAddon;
+import com.qualityplus.fastwrapper.api.RegionAddon;
 import org.bukkit.Location;
 
 import java.util.Optional;

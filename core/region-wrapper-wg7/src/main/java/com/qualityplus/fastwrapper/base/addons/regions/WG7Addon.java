@@ -1,6 +1,7 @@
 package com.qualityplus.fastwrapper.base.addons.regions;
 
-import com.qualityplus.fastwrapper.api.addons.RegionAddon;
+import com.qualityplus.fastwrapper.api.RegionAddon;
+import com.qualityplus.fastwrapper.api.type.RegionPlugin;
 import com.sk89q.worldedit.bukkit.BukkitAdapter;
 import com.sk89q.worldedit.world.World;
 import com.sk89q.worldguard.WorldGuard;
@@ -18,7 +19,7 @@ import java.util.stream.Collectors;
  */
 public final class WG7Addon implements RegionAddon {
     private final RegionContainer container = WorldGuard.getInstance().getPlatform().getRegionContainer();
-    private static final String WORLD_GUARD_7 = "World Guard 7";
+    private static final RegionPlugin REGION_PLUGIN = RegionPlugin.WORLD_GUARD_7;
 
     @Override
     public Set<String> getRegions(final Location location) {
@@ -39,6 +40,6 @@ public final class WG7Addon implements RegionAddon {
 
     @Override
     public Optional<String> getAddonName() {
-        return Optional.of(WORLD_GUARD_7);
+        return Optional.of(REGION_PLUGIN.getName());
     }
 }

@@ -11,6 +11,7 @@ repositories {
 
 dependencies {
     project(':core').subprojects.forEach(project -> implementation project)
+    compileOnly 'org.spigotmc:spigot-api:1.18.1-R0.1-SNAPSHOT'
     implementation project(':api')
 }
 

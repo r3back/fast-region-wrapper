@@ -1,6 +1,6 @@
 package com.qualityplus.fastwrapper.base.addons;
 
-import com.qualityplus.fastwrapper.api.addons.RegionAddon;
+import com.qualityplus.fastwrapper.api.RegionAddon;
 import org.bukkit.Location;
 
 import java.util.Collections;
