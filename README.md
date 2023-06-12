@@ -1,4 +1,5 @@
 # Fast Region Wrapper
+[![](https://jitpack.io/v/r3back/fast-region-wrapper.svg)](https://jitpack.io/#r3back/fast-region-wrapper)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/r3back/fast-region-wrapper/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/r3back/fast-region-wrapper/tree/master)
 
 Lightweight library for developers to switch and handle easily between different region spigot mc plugins.
@@ -57,13 +58,13 @@ public interface RegionAddon extends DependencyPlugin {
 ## Run application
 This App uses Gradle to handle dependencies & building.
 
-* You can create a profile with gradle module and deploy automatically project.
-* You can run it through gradle command
+*   You can create a profile with Gradle module and deploy automatically project.
+*   You can run it through gradle command.
 
 #### Build Requirements
-* Java 8 JDK or newest
-* Gradle
-* Git
+*   Java 8 JDK or newest
+*   Gradle
+*   Git
 
 ```
 gradle clean build
