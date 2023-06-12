@@ -6,7 +6,55 @@
 
 Lightweight library for developers to switch and handle easily between different region spigot mc plugins.
 
-# API Usage
+## Dependency Usage
+
+### Maven
+
+```xml
+<repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+</repository>
+```
+
+```xml
+<dependency>
+    <groupId>com.github.r3back</groupId>
+    <artifactId>fast-region-wrapper</artifactId>
+    <version>LATEST</version>
+</dependency>
+```
+
+### Gradle
+
+```groovy
+repositories {
+    maven { 
+        url 'https://jitpack.io' 
+    }
+}
+```
+
+```groovy
+dependencies {
+    compileOnly 'com.github.r3back:fast-region-wrapper:LATEST'
+}
+```
+
+## API Usage
+
+```java
+/**
+ * Fast Region Plugin Wrapper Interface
+ */
+public interface FastWrapperAPI {
+    /**
+     *
+     * @return {@link RegionAddon}
+     */
+    public RegionAddon getRegionAddon();
+}
+```
 
 ```java
 /**
@@ -54,41 +102,6 @@ public interface RegionAddon extends DependencyPlugin {
      * @return List of regions in for a location
      */
     public Set<String> getRegions(final Location location);
-}
-```
-
-## Dependency Usage
-
-### Maven
-
-```xml
-<repository>
-    <id>jitpack.io</id>
-    <url>https://jitpack.io</url>
-</repository>
-```
-
-```xml
-<dependency>
-    <groupId>com.github.r3back</groupId>
-    <artifactId>fast-region-wrapper</artifactId>
-    <version>LATEST</version>
-</dependency>
-```
-
-### Gradle
-
-```groovy
-repositories {
-    maven { 
-        url 'https://jitpack.io' 
-    }
-}
-```
-
-```groovy
-dependencies {
-    compileOnly 'com.github.r3back:fast-region-wrapper:LATEST'
 }
 ```
 
