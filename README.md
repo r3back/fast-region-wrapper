@@ -57,19 +57,39 @@ public interface RegionAddon extends DependencyPlugin {
 }
 ```
 
-## Run application
-This App uses Gradle to handle dependencies & building.
+## Dependency Usage
 
-*   You can create a profile with Gradle module and deploy automatically project.
-*   You can run it through gradle command.
+### Maven
 
-#### Build Requirements
-*   Java 8 JDK or newest
-*   Gradle
-*   Git
-
+```xml
+<repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+</repository>
 ```
-gradle clean build
+
+```xml
+<dependency>
+    <groupId>com.github.r3back</groupId>
+    <artifactId>fast-region-wrapper</artifactId>
+    <version>LATEST</version>
+</dependency>
+```
+
+### Gradle
+
+```groovy
+repositories {
+    maven { 
+        url 'https://jitpack.io' 
+    }
+}
+```
+
+```groovy
+dependencies {
+    compileOnly 'com.github.r3back:fast-region-wrapper:LATEST'
+}
 ```
 
 ## License
