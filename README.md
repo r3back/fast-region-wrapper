@@ -1,4 +1,6 @@
 # Fast Region Wrapper
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/cb9e1b7178e54b649888715ff79a6d55)](https://app.codacy.com/gh/r3back/fast-region-wrapper/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![](https://jitpack.io/v/r3back/fast-region-wrapper.svg)](https://jitpack.io/#r3back/fast-region-wrapper)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/r3back/fast-region-wrapper/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/r3back/fast-region-wrapper/tree/master)
 
