@@ -6,6 +6,4 @@ dependencies {
     compileOnly 'me.TechsCode:UltraRegionsAPI:1.0.0'
 
     compileOnly project(':api')
-
-    compileOnly fileTree(dir: '/libs', include: ['*.jar'])
 }

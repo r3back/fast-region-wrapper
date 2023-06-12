@@ -15,9 +15,8 @@ def urlFile = { url, name ->
 }
 
 dependencies {
+    compileOnly urlFile(System.getenv("RESIDENCE_DOWNLOAD_URL"), 'residence-latest')
     compileOnly 'org.spigotmc:spigot-api:1.18.1-R0.1-SNAPSHOT'
 
     compileOnly project(':api')
-
-    compileOnly urlFile(System.getenv("RESIDENCE_DOWNLOAD_URL"), 'residence-latest')
 }
