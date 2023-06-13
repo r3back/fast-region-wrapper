@@ -1,0 +1,14 @@
+plugins {
+    id 'com.github.johnrengelman.shadow'
+}
+
+group = 'com.github.r3back'
+version = rootProject.version
+
+shadowJar {
+    archiveFileName = project.name + "-SNAPSHOT.jar"
+}
+
+artifacts {
+    archives shadowJar
+}

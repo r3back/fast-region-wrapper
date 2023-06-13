@@ -1,14 +1,66 @@
 plugins {
-    id 'com.github.johnrengelman.shadow'
+    id 'java'
 }
 
-group = 'com.github.r3back'
-version = rootProject.version
+group 'com.github.r3back'
+version rootProject.version
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url 'https://repo.papermc.io/repository/maven-public/'
+    }
+}
+
+dependencies {
+    implementation 'junit:junit:4.13.2'
+    project(':region-wrapper').subprojects.forEach(project -> implementation project)
+    testImplementation 'com.github.seeseemelk:MockBukkit-v1.19:3.0.0'
+    compileOnly 'org.spigotmc:spigot-api:1.18.1-R0.1-SNAPSHOT'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.3'
+    testImplementation 'org.mockito:mockito-core:5.3.1'
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.3.1'
+
+    implementation project(':api')
+}
 
 shadowJar {
-    archiveFileName = project.name + "-SNAPSHOT.jar"
+    archiveClassifier.set('')
+
+    dependencies {
+        include(project(':api'))
+        include(project(':region-wrapper:region-wrapper-commons'))
+        include(project(':region-wrapper:region-wrapper-residence'))
+        include(project(':region-wrapper:region-wrapper-ultra-regions'))
+        include(project(':region-wrapper:region-wrapper-wg6'))
+        include(project(':region-wrapper:region-wrapper-wg7'))
+    }
 }
 
 artifacts {
     archives shadowJar
+}
+
+publishing {
+    repositories {
+        maven {
+            url "https://jitpack.io"
+            credentials {
+                username 'token'
+                password System.getenv('API_TOKEN')
+            }
+        }
+    }
+
+
+    publications {
+        register('shadow', MavenPublication) {
+            groupId project.group
+            artifactId rootProject.name
+            version project.version
+            artifact shadowJar
+        }
+    }
 }

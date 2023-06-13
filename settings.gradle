@@ -1,10 +1,10 @@
 rootProject.name = 'fast-region-wrapper'
-include ('core',
+include ('region-wrapper',
+        'core',
         'api',
-        'plugin',
-        'core:region-wrapper-commons',
-        'core:region-wrapper-residence',
-        'core:region-wrapper-ultra-regions',
-        'core:region-wrapper-wg6',
-        'core:region-wrapper-wg7')
+        'region-wrapper:region-wrapper-commons',
+        'region-wrapper:region-wrapper-residence',
+        'region-wrapper:region-wrapper-ultra-regions',
+        'region-wrapper:region-wrapper-wg6',
+        'region-wrapper:region-wrapper-wg7')
 
