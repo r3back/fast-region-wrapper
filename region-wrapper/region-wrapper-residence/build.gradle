@@ -4,7 +4,7 @@ version = rootProject.version
 
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.18.1-R0.1-SNAPSHOT'
-    compileOnly fileTree(dir: '/libs', include: ['*.jar'])
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
 
     compileOnly project(':api')
 }
