@@ -18,7 +18,6 @@ import java.util.stream.Collectors;
  * World Guard 7 implementation
  */
 public final class WG7Addon implements RegionAddon {
-    private final RegionContainer container = WorldGuard.getInstance().getPlatform().getRegionContainer();
     private static final RegionPlugin REGION_PLUGIN = RegionPlugin.WORLD_GUARD_7;
 
     @Override
@@ -26,6 +25,10 @@ public final class WG7Addon implements RegionAddon {
         final World weWorld = Optional
                 .ofNullable(location.getWorld()).map(BukkitAdapter::adapt)
                 .orElse(null);
+
+        final RegionContainer container = WorldGuard.getInstance()
+                .getPlatform()
+                .getRegionContainer();
 
         return Optional.ofNullable(container.get(weWorld))
                 .map(manager -> container.createQuery()

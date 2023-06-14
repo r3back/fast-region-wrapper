@@ -32,6 +32,6 @@ public final class WG6Addon implements RegionAddon {
 
     @Override
     public Optional<String> getAddonName() {
-        return Optional.of(REGION_PLUGIN.name());
+        return Optional.of(REGION_PLUGIN.getName());
     }
 }

@@ -97,7 +97,7 @@ public final class FastWrapperAPITest {
         Mockito.when(this.factory.getRegionAddon()).thenReturn(new UltraRegionsAddon());
 
         Assertions.assertTrue(this.api.getRegionAddon().getAddonName().isPresent());
-        Assertions.assertEquals(RegionPlugin.RESIDENCE.getName(), this.api.getRegionAddon().getAddonName().get());
+        Assertions.assertEquals(RegionPlugin.ULTRA_REGIONS.getName(), this.api.getRegionAddon().getAddonName().get());
     }
 
     /**
