@@ -1,8 +1,8 @@
 package com.qualityplus.fastwrapper.base.addons.regions;
 
-import com.bekvon.bukkit.residence.Residence;
+/*import com.bekvon.bukkit.residence.Residence;
 import com.bekvon.bukkit.residence.protection.ClaimedResidence;
-import com.google.common.collect.ImmutableSet;
+import com.google.common.collect.ImmutableSet;*/
 import com.qualityplus.fastwrapper.api.RegionAddon;
 import com.qualityplus.fastwrapper.api.type.RegionPlugin;
 import org.bukkit.Location;
