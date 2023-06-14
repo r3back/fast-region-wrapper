@@ -1,8 +1,6 @@
 jdk:
-  - openjdk8
+  - openjdk17
 install:
   - echo "Running fast-region-wrapper build"
-  - ./gradlew dependencies
+  - ./gradlew test
   - ./gradlew build
-env:
-  RESIDENCE_DOWNLOAD_URL: "https://zrips.net/Residence/download.php?file=Residence5.1.1.3.jar"
