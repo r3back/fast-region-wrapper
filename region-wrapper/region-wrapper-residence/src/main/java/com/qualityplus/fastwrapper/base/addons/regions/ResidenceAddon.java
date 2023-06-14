@@ -7,6 +7,7 @@ import com.qualityplus.fastwrapper.api.RegionAddon;
 import com.qualityplus.fastwrapper.api.type.RegionPlugin;
 import org.bukkit.Location;
 
+import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
@@ -18,10 +19,10 @@ public final class ResidenceAddon implements RegionAddon {
 
     @Override
     public Set<String> getRegions(final Location location) {
-        return Optional.ofNullable(getByLoc(location))
+        return /*Optional.ofNullable(getByLoc(location))
                 .map(ClaimedResidence::getName)
                 .map(ImmutableSet::of)
-                .orElseGet(ImmutableSet::of);
+                .orElseGet(ImmutableSet::of)*/new HashSet<>();
     }
 
     @Override
@@ -30,9 +31,9 @@ public final class ResidenceAddon implements RegionAddon {
     }
 
 
-    private ClaimedResidence getByLoc(final Location location) {
+    /*private ClaimedResidence getByLoc(final Location location) {
         return Residence.getInstance()
                 .getResidenceManager()
                 .getByLoc(location);
-    }
+    }*/
 }
