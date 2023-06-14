@@ -1,9 +1,11 @@
 version: "3"
-
+# Added just to emulate CircleCI build and don't lose free minutes :D
 services:
   gradle:
     image: gradle:jdk17-jammy
     volumes:
       - .:/app
     working_dir: /app
-    command: gradle build
+    command: >
+      bash -c "gradle clean build;
+      gradle test"
