@@ -38,6 +38,7 @@ jobs:
           paths:
             - ~/.gradle
           key: v1-dependencies-{{ checksum "build.gradle" }}
-      - run: gradle :region-wrapper:region-wrapper-residence:dependencies
+      # run tests
+      - run: gradle test
       # build modules
       - run: gradle build
